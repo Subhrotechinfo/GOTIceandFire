@@ -1,0 +1,18 @@
+.container-fluid.img {
+    background-image: url("../../assets/img/gotcover.jpeg");
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    margin: 0%;
+    border: none;
+}
+.card-img-top {
+    height: 40vh;
+}
+/* .card-img-top:hover {
+    transform: scale(1.0)
+} */
