@@ -1,1 +1,20 @@
-<p>book list</p>
+<a routerLink="/body-detail">Book detail</a>
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-sm-4" *ngFor="let data of dataArray; let i=index">
+            <div class="card">
+                <img 
+                src="https://www.recruiter.co.uk/sites/default/files/media/image/2017/game-of-thrones-chbo.jpg" 
+                    alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4> Heading {{ i }}  </h4>
+                    <p>  Body  {{ data }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<router-outlet></router-outlet>
+
