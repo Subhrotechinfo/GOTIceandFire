@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookListComponent implements OnInit {
   dataArray = ['Summer', 'Winter', 'Autumn','Rainy','Dry'].sort();
+
+
+  
   constructor() { }
 
   ngOnInit() {

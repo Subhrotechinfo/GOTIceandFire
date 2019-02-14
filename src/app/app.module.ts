@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BookComponent } from './book/book.component';
 import { BookListComponent } from './book/book-list/book-list.component';
 import { BookDetailComponent } from './book/book-list/book-detail/book-detail.component';
+import { BookService } from './book/book.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { BookDetailComponent } from './book/book-list/book-detail/book-detail.co
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
