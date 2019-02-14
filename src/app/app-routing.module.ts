@@ -7,7 +7,9 @@ import { BookDetailComponent } from './book/book-list/book-detail/book-detail.co
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},
     { path: 'book', component: BookComponent },
-    { path: 'body-detail', component: BookDetailComponent }
+    { path: 'body-detail', component: BookDetailComponent },
+    { path: 'body-detail/:id', component: BookDetailComponent }
+
 ];
 
 

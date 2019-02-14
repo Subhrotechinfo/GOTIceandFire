@@ -1,17 +1,22 @@
 <a routerLink="/body-detail">Book detail</a>
 <div class="container-fluid">
     <div class="row" >
-        <div class="col-sm-4" *ngFor="let data of dataArray; let i=index">
+        <div class="col-sm-4 pt-3" *ngFor="let book of books; let i=index">
             <div class="card">
                 <img 
                 src="https://www.recruiter.co.uk/sites/default/files/media/image/2017/game-of-thrones-chbo.jpg" 
                     alt="" class="card-img-top">
                 <div class="card-body">
-                    <h4> Heading {{ i }}  </h4>
-                    <p>  Body  {{ data }}</p>
+                    <h4><a routerLink="../body-detail"> {{ book.name }}  </a></h4>
+                    <p>Author: {{  book.authors }}</p>
+                    <p>ISBN: {{ book.isbn }}</p>
+                    <p>NumberOfPages: {{ book.numberOfPages }}</p>
+                    <p>Publisher: {{ book.publisher}}</p>
+                    <p>Released Date: {{book.released}}</p>
+                    <p>Country: {{ book.country }} </p>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 

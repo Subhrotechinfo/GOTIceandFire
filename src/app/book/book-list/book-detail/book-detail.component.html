@@ -1,11 +1,16 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row col-sm-4" >
     <div class="card">
       <img src="https://www.recruiter.co.uk/sites/default/files/media/image/2017/game-of-thrones-chbo.jpg" 
       alt="book details" class="card-img-top">
       <div class="card-body">
-        <!-- <h4>Body info {{ books. }}</h4> -->
-        <p>Body Details</p>
+        <h4> {{ book.name }}  </h4>
+          <p>Author: {{  book.authors }}</p>
+          <p>ISBN: {{ book.isbn }}</p>
+          <p>NumberOfPages: {{ book.numberOfPages }}</p>
+          <p>Publisher: {{ book.publisher }}</p>
+          <p>Released Date: {{ book.released }}</p>
+          <p>Country: {{ book.country }} </p>
       </div>
     </div>
   </div>

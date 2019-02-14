@@ -11,8 +11,8 @@ export class BookService {
                 //     return response; 
                 // });
     }
-    getBookById() {
-        
+    getBookById(id:number) {
+        return this.http.get(`https://anapioficeandfire.com/api/books/`+id);
     }
 
 }

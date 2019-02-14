@@ -11,6 +11,13 @@ import { BookComponent } from './book/book.component';
 import { BookListComponent } from './book/book-list/book-list.component';
 import { BookDetailComponent } from './book/book-list/book-detail/book-detail.component';
 import { BookService } from './book/book.service';
+import { BookModel } from './book/book.model';
+import { CharacterComponent } from './character/character.component';
+import { CharacterListComponent } from './character/character-list/character-list.component';
+import { CharacterDetailComponent } from './character/character-list/character-detail/character-detail.component';
+import { HousesComponent } from './houses/houses.component';
+import { HouseListComponent } from './houses/house-list/house-list.component';
+import { HouseDetailComponent } from './houses/house-list/house-detail/house-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +27,13 @@ import { BookService } from './book/book.service';
     FooterComponent,
     BookListComponent,
     BookDetailComponent,
-    BookComponent
+    BookComponent,
+    CharacterComponent,
+    CharacterListComponent,
+    CharacterDetailComponent,
+    HousesComponent,
+    HouseListComponent,
+    HouseDetailComponent
   ],
   imports: [
     BrowserModule,
